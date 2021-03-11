@@ -547,41 +547,41 @@
     console.log("success sendlead");
   }
 
-  $("form").submit(function (e) {
-    e.preventDefault();
-    debugger;
-    var form = $(this);
-    form.find(".form-error").removeClass("form-error");
-    var formError = false;
+  // $("form").submit(function (e) {
+  //   e.preventDefault();
+  //   debugger;
+  //   var form = $(this);
+  //   form.find(".form-error").removeClass("form-error");
+  //   var formError = false;
 
-    form.find(".input").each(function () {
-      if ($(this).val() == "") {
-        $(this).addClass("form-error");
-        $(this).select();
-        formError = true;
-        return false;
-      } else if ($(this).hasClass("email") && !isValidEmail($(this).val())) {
-        $(this).addClass("form-error");
-        $(this).select();
-        formError = true;
-        return false;
-      }
-    });
+  //   form.find(".input").each(function () {
+  //     if ($(this).val() == "") {
+  //       $(this).addClass("form-error");
+  //       $(this).select();
+  //       formError = true;
+  //       return false;
+  //     } else if ($(this).hasClass("email") && !isValidEmail($(this).val())) {
+  //       $(this).addClass("form-error");
+  //       $(this).select();
+  //       formError = true;
+  //       return false;
+  //     }
+  //   });
 
-    if (!formError) {
-      $("body").addClass("form-submitted");
-      $("#form-head").addClass("form-submitted");
+  //   if (!formError) {
+  //     $("body").addClass("form-submitted");
+  //     $("#form-head").addClass("form-submitted");
 
-      var name = encodeURI(form.find("input.name").val());
-      var email = encodeURI(form.find("input.email").val());
-      var address = encodeURI(form.find("input.message").val());
-      var tel = encodeURI(form.find("input.number").val());
+  //     var name = encodeURI(form.find("input.name").val());
+  //     var email = encodeURI(form.find("input.email").val());
+  //     var address = encodeURI(form.find("input.message").val());
+  //     var tel = encodeURI(form.find("input.number").val());
 
-      sendMail(email, name, address, tel, function () {
-        $(form).trigger("reset");
-        $("form button").text("Thank you");
-      });
-    }
-    return false;
-  });
+  //     sendMail(email, name, address, tel, function () {
+  //       $(form).trigger("reset");
+  //       $("form button").text("Thank you");
+  //     });
+  //   }
+  //   return false;
+  // });
 })(window.jQuery);
