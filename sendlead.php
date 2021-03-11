@@ -21,16 +21,16 @@ try {
     $mail->Port = 25;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('noreply@fortcollinspressurewashers.com','Fort Collins Pressure Wash - Website step 1 Lead ');
+    $mail->setFrom('noreply@Longmontpressurewashers.com','Longmont Pressure Wash - Website step 1 Lead ');
     $mail->addAddress($to, $name);     // Add a recipient            // Name is optional
     $mail->addAddress($to_2, $name);     // Add a recipient            // Name is optional
-    $mail->addReplyTo('noreply@fortcollinspressurewashers.com', 'Fort Collins Pressure Wash - Website step 1  Lead');
+    $mail->addReplyTo('noreply@Longmontpressurewashers.com', 'Longmont Pressure Wash - Website step 1  Lead');
 	$mail->CharSet = 'UTF-8';
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Fort Collins Pressure Wash Lead Form ';
-    $mail->Body    = '<h1>Fort Collins Pressure Wash  Page Form</h1><br/>
+    $mail->Subject = 'Longmont Pressure Wash Lead Form ';
+    $mail->Body    = '<h1>Longmont Pressure Wash  Page Form</h1><br/>
     <table style="border: 1px solid #171717;">
     <thead>
         <tr style="border: 1px solid #171717;">

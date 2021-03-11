@@ -1461,13 +1461,13 @@ div#mCSB_1_container {
   transform: scale(1.15);
 }
 .banner-carousel .active .slide-item .image-layer.image-1 {
-  background: url("../images/banner/fort-collins-pressure-wash-banner-1.jpg");
+  background: url("../images/banner/longmont-pressure-wash-banner-1.jpg");
 }
 .banner-carousel .active .slide-item .image-layer.image-2 {
-  background: url("../images/banner/fort-collins-pressure-washing-banner-2.jpg");
+  background: url("../images/banner/longmont-pressure-washing-banner-2.jpg");
 }
 .banner-carousel .active .slide-item .image-layer.image-3 {
-  background: url("../images/banner/fort-collins-pressure-washing-banner-3.jpg");
+  background: url("../images/banner/longmont-pressure-washing-banner-3.jpg");
 }
 
 .banner-carousel .content-box {
@@ -7217,7 +7217,7 @@ div[class^="bubble-"] {
 }
 
 .experience-section {
-  background-image: url(../images/background/fort-collins-eco-friendly-power-wash.jpg);
+  background-image: url(../images/background/longmont-eco-friendly-power-wash.jpg);
   position: relative;
 }
 
@@ -7259,5 +7259,5 @@ div[class^="bubble-"] {
 }
 
 .ourmission-section .bg-layer {
-  background-image: url(../images/background/fort-collins-our-mission-pressure-washing-bg.jpg);
+  background-image: url(../images/background/longmont-our-mission-pressure-washing-bg.jpg);
 }
